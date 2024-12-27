@@ -5,7 +5,7 @@ if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root. Use sudo." 
    exit 1
 fi
-sudo su
+
 echo "Updating and upgrading the system..."
 apt update && apt upgrade -y
 
