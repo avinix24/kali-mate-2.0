@@ -16,9 +16,6 @@ wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add -
 echo "Updating package lists..."
 apt update
 
-echo "Installing MATE desktop environment..."
-sudo apt install -y mate-desktop-environment mate-desktop-environment-extra mate-tweak
-
 echo "Installing Kali Linux themes and tools..."
 sudo apt install -y kali-desktop-mate  -o dpkg::options::="--force-overwrite"
  kali-themes kali-menu kali-archive-keyring 
